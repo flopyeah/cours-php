@@ -18,7 +18,16 @@
         // j'affiche les variables
         echo $presentation;
         echo $presentation2;
-        
+
+        $int = (int) 30;
+        $float = (float) 30;
+        $string = (string) 'ok';
+        $bool = (bool) false;
+
+        var_dump($int);
+        var_dump($float);
+        var_dump($string);
+        var_dump($bool);
     ?>
   </body>
 </html>
