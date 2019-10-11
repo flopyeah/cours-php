@@ -1,6 +1,8 @@
 PDO - Partie 1 : Lire des données
 Exécuter le script geo.sql avant de commencer. Tous les résultats devront être affichés dans une page index.php.
-Attention ! Si vous avez un doute sur les requêtes SQL à effectuer, saisissez-les directement dans PHPMyAdmin pour les tester, ça sera plus facile que de les tester directement dans le code PHP !
+Attention ! Si vous avez un doute sur les requêtes SQL à effectuer, 
+saisissez-les directement dans PHPMyAdmin pour les tester, 
+ça sera plus facile que de les tester directement dans le code PHP !
 
 Rappel :
 Connexion à la base de données $bdd = new PDO()...

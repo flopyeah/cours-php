@@ -10,15 +10,16 @@
         <h1>Do while</h1>
         <?php
             $x = 0;
-            $y = 20;
             
             do{
                 echo '$x contient la valeur ' .$x. '<br>';
                 $x++;
             }while($x <= 5);
             
+            $y = 20;
+
             do{
-                echo '$y contient la valeur ' .$y. '<br>';
+                echo '<br>$y contient la valeur ' .$y. '';
                 $y++;
             }while($y <= 5);
         ?>

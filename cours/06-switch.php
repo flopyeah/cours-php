@@ -6,8 +6,10 @@
   <body>
     <h1>Structure conditionelle "switch"</h1>
     <?php
+        // j'affecte la valeur 2 à la variable $i 
         $i = 2;
 
+        // selon la valeur de $i j'affiche sa valeur 
         switch ($i) {
             case 0:
                 echo "i égal 0";

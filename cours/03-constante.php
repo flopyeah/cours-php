@@ -14,6 +14,7 @@
         const VINGT = '20';
         echo 'La constante VINGT stocke la valeur ' .VINGT. '<br>';
 
+      
         echo '<br>Numéro de ligne : '.__LINE__; 
         echo '<br>chemin du fichier : '.__FILE__;
     ?>

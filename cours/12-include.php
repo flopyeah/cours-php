@@ -9,6 +9,7 @@
     <body>
         <h1>Titre principal</h1>
         <?php
+            // j'inclus le fichier menu.php
             echo '<h2>Menu inclus avec include</h2> <br>';
             include 'menu.php';
         

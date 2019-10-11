@@ -1,10 +1,13 @@
 <?php 
 
+    // verifie si le champs n'est pas vide
     function valid_input($input) {
         if ( $input != '' ) {
+            // retourne la valeur du champs s'il n'est vide 
             return $input;
         } 
         else {
+            // retourne false si le champs est vide 
             return false;
         }
     }

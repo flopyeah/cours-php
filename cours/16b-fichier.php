@@ -17,6 +17,7 @@
             
             $line = fputs($fichier, "\nNouveau texte"); 
 
+            // je recupère le contenu du fichier 
             $content = fread($fichier, filesize($filename));
             
             // quand on a fini de l'utiliser, on ferme le fichier

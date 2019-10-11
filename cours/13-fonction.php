@@ -1,9 +1,10 @@
 <?php
     /* 
         affiche bonjour et le prenom si un parametre est présent
+        affiche Monsieur, Madame si aucun argument n'est rempli 
     */
-    function bonjour($prenom = 'Monsieur, Madame') {
-        echo 'Bonjour '.$prenom;
+    function bonjour($age, $prenom = 'Monsieur, Madame') {
+        echo 'Bonjour '.$prenom.', vous avez '.$age.' ans.';
     }
 
     // calcul de l'age en fonction de l'année de naissance donnée en parametre

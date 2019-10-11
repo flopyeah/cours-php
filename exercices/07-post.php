@@ -1,3 +1,4 @@
+
 Exercice 1 
 Créer un formulaire sur la page index.php, 
 ce formulaire doit rediriger vers la page user.php avec la méthode POST.
