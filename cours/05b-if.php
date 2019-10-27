@@ -4,7 +4,7 @@
     <title>Cours PHP & MySQL</title>
   </head>
   <body>
-    <h1>Structure conditionelle "if"</h1>
+    <h1>Structure conditionelle "if" Ternaire</h1>
     <?php
             $x = 4; //On affecte la valeur 4 à $x
             
