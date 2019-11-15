@@ -1,4 +1,5 @@
 <?php
-    echo 'Hello world';
+  // les 2 instructions permettent d'afficher 
+  echo 'Hello world';
 ?>
 <?= 'Premier cours'; ?>
