@@ -19,11 +19,13 @@
         echo $presentation;
         echo $presentation2;
 
+        // Je type mes varibles 
         $int = (int) 30;
         $float = (float) 30;
         $string = (string) 'ok';
         $bool = (bool) false;
 
+        // j'affiche le type de mes varibles 
         var_dump($int);
         var_dump($float);
         var_dump($string);
