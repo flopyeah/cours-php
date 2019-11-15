@@ -30,6 +30,7 @@
         var_dump($float);
         var_dump($string);
         var_dump($bool);
+        
     ?>
   </body>
 </html>
