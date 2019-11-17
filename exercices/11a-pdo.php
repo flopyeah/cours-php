@@ -1,28 +1,41 @@
 PDO - Partie 1 : Lire des données
-Exécuter le script geo.sql avant de commencer. Tous les résultats devront être affichés dans une page index.php.
+
+Exécuter le script user.sql avant de commencer. Tous les résultats devront être affichés dans une page 
 Attention ! Si vous avez un doute sur les requêtes SQL à effectuer, 
 saisissez-les directement dans PHPMyAdmin pour les tester, 
 ça sera plus facile que de les tester directement dans le code PHP !
 
-Rappel :
-Connexion à la base de données $bdd = new PDO()...
-Rédaction de la requête dans $request...
-Exécution de la request : $response = $bdd->query()...
-Lecture des résultats de la requête : $results = $response->fetchAll()...
-Affichage des résultats (var_dump(), echo, print_r, foreach... le plus adapté)
-
-Exercice 1
-Afficher toutes les regions.
-
-Exercice 2
-Afficher tous les départements.
-
-Exercice 3
-Afficher les 20 premiers départements par ordre alphabetique 
-
 Exercice 4 
-Créer une page region.php qui recevra en parametre code qui correspondra au code région.
-affiche tous les départements qui appartiennent à cette région. 
-    Exemple
-        => region.php?code=34
-        affiche les départements ayant pour code_region 34 
+Sur ma table user 
+afficher tous les utilisateurs dans une page user-4.php
+
+
+Exercice 5
+Sur ma table user 
+dans une page user-5.php
+afficher tous les utilisateurs ayant une adresse gmail.com 
+
+Exercice 6
+Sur ma table user 
+dans une page user-6.php
+afficher tous les utilisateurs actifs (status = 0)
+
+Exercice 7
+Sur ma table user 
+dans une page user-7.php
+afficher toutes les informations de l'utilisateur Grégoire Bernier
+e-mail : 
+prenom : 
+nom : 
+statut : 
+
+Exerceice 8 
+reprendre l'excercice 4 et 
+afficher les utilisateurs proprement en HTML dans un tableau de ce type
+https://getbootstrap.com/docs/4.0/content/tables/#striped-rows
+
+avec pour entête 
+id - prenom - nom - e-mail - statut 
+
+n'oubliez pas le CSS bootstrap à ajouter 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">

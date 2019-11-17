@@ -15,8 +15,9 @@
                 echo '$x stocke un nombre négatif<br>';
             }
             
-            //Est équivalent à cela :
-            echo $x >= 0 ? '$x stocke un nb positif<br>' : '$x stocke un nb négatif<br>'; 
+            // ternaire 
+            // Est équivalent à cela :
+            echo ($x >= 0) ? '$x stocke un nb positif<br>' : '$x stocke un nb négatif<br>'; 
         ?>
   </body>
 </html>

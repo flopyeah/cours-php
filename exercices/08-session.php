@@ -1,8 +1,8 @@
-Exercice 1
-Ecrire un formulaire qui permet de récupérer le login et le mot de passe de l'utilisateur,  login.php
+Exercice 2
+Ecrire un formulaire qui permet de récupérer le email et le mot de passe de l'utilisateur,  login.php
 
 si 
-    login = admin 
+    email = admin 
     password = mdp_secret
 
     j'affiche "vous etes admin vous avez acces a la page"

@@ -1,0 +1,19 @@
+Exercice 8 
+Sur ma table user 
+créer une page getuser.php 
+Tester sur cette page que le paramètre de cette URL existe et les afficher les informations de l'utilisateur
+getuser.php?id=24
+toutes les informations de l'utilisateur ayant id = 24
+e-mail : 
+prenom : 
+nom : 
+statut : 
+
+
+Exercice 9
+
+Créer une page departement-code.php qui recevra en parametre code qui correspondra au code région.
+affiche tous les départements qui appartiennent à cette région. 
+    Exemple
+        => region.php?code=34
+        affiche les départements ayant pour code_region 34 

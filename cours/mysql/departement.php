@@ -16,6 +16,21 @@
     catch(PDOException $e){
       die( "Erreur : " . $e->getMessage());
     }
+
+    if (isset($_GET['code'])) {
+        $query      = ' SELECT D.code, D.name, R.name as region 
+                                    FROM departments D, regions R
+                                    WHERE region_code = :code
+                                    AND D.region_code = R.code';
+
+                    $queryPrepare   = $bdd->prepare($query);
+
+                    $queryPrepare->execute([
+                        'code' => $_GET['code']
+                    ]);
+
+                    $ListeDepartements = $queryPrepare->fetchAll(PDO::FETCH_ASSOC);
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,16 +42,8 @@
         <h1>Bases de données MySQL avec PDO</h1>  
         <?php
             if (isset($_GET['code'])) {
-                $query      = ' SELECT D.code, D.name, R.name as region 
-                                FROM departments D, regions R
-                                WHERE region_code = '. $_GET['code'].'
-                                AND D.region_code = R.code';
-
-                $response   = $bdd->query($query);
-
-                $ListeDepartements = $response->fetchAll(PDO::FETCH_ASSOC);
-
-                echo '<h2>'.$ListeDepartements[0]['region'].'</h2>';
+                
+                echo '<h2>Départements de '.$ListeDepartements[0]['region'].'</h2>';
 
                 foreach ($ListeDepartements as $departement) {
                     echo $departement['code']. ' - ' .$departement['name'] . '<br />';

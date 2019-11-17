@@ -15,6 +15,7 @@
      *les informations relatives à celle-ci*/
     catch(PDOException $e){
       echo "Erreur : " . $e->getMessage();
+      die;
     }
 ?>
 <!DOCTYPE html>
@@ -22,7 +23,6 @@
     <head>
         <title>Cours PHP / MySQL</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="cours.css">
     </head>
     <body>
         <h1>Bases de données MySQL avec PDO</h1>  
@@ -30,13 +30,10 @@
             $query      = 'SELECT code, name FROM departments';
 
             $response   = $bdd->query($query);
-            $ListeDepartements = $response->fetchAll(PDO::FETCH_ASSOC);
+            $departement = $response->fetch(PDO::FETCH_ASSOC);
 
-            foreach ($ListeDepartements as $departement) {
-                echo $departement['code']. ' - ' .$departement['name'] . '<br />';
-            }
+            echo $departement['code']. ' - ' .$departement['name'] . '<br />';
 
-            //$reponse->closeCursor();
         ?>
     </body>
 </html>

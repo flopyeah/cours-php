@@ -1,6 +1,4 @@
 <?php 
-    //session_start();
-
     setcookie('pseudo', 'Jack33', time() + 365*24*3600);
 ?>
 <!DOCTYPE html>

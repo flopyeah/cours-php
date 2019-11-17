@@ -1,15 +1,7 @@
 <?php
-    /* 
-        affiche bonjour et le prenom si un parametre est présent
-        affiche Monsieur, Madame si aucun argument n'est rempli 
-    */
-    function bonjour($age, $prenom = 'Monsieur, Madame') {
-        echo 'Bonjour '.$prenom.', vous avez '.$age.' ans.';
-    }
-
     // calcul de l'age en fonction de l'année de naissance donnée en parametre
     function calculAge($annee) {
-        $age = date('Y') - $annee; 
+        $age = 2019 - $annee; 
         return $age;
     }     
 ?>
@@ -22,18 +14,10 @@
     
     <body>
         <h1>Fonction php</h1>
-        <h2>Bonjour</h2>
-        <?php
-            // bonjour Bernard 
-            bonjour('Bernard');
-            bonjour();
-        ?>
-
-        <h2>Calcul de l'age</h2>
         <?php
             // calcul de l'age grace à la fonction calculAge()
-            $age = calculAge(1997);
-            echo 'Vous avez ' . $age . ' ans.'; 
+            $ageUser = calculAge(1997);
+            echo 'Vous avez ' . $ageUser . ' ans.'; 
         ?>
     </body>
 </html>
