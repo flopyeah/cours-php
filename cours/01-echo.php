@@ -1,4 +1,5 @@
 <?php
+
 // structure conditionnelle 
     $name = 'Bertrand';
 
@@ -9,3 +10,10 @@
     {
         echo 'tu n\'es pas florian';
     }
+
+  // les 2 instructions permettent d'afficher 
+  echo 'Hello world';
+?>
+
+<?= 'Premier cours'; ?>
+
